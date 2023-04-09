@@ -28,7 +28,7 @@ const router = createBrowserRouter([
        loader: ()=> fetch('features.json')
       },
       {
-        path: '/',
+        path: '/:id',
         element: <SingleFeature></SingleFeature>,
       },
       {

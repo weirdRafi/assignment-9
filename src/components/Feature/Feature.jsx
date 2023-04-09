@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign, faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Feature = ({feature}) => {
     const {id, img, title, subtitle, location, salary } = feature;
-  
+    
+    
+
     return (
         <div>
             <img src={img} alt="" />
@@ -18,7 +20,7 @@ const Feature = ({feature}) => {
             <p className='pb-3'><FontAwesomeIcon icon={faLocationDot} className="text-center" />
             {location} <FontAwesomeIcon icon={faDollarSign} className="text-center" />  Salary: {salary}
             </p>
-            <Link to="/feature" className='btn bg-gradient-to-r from-blue-500 to-purple-500 btn-sm'>View Details</Link>
+            <Link to={`/${id}`} className='btn bg-gradient-to-r from-blue-500 to-purple-500 btn-sm'>View Details</Link>
 
         </div>
     );
