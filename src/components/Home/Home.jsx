@@ -7,11 +7,11 @@ const Home = () => {
     const features = useLoaderData()
 
     const [datas, setDatas] = useState([])
-    useEffect(()=>{
+    useEffect(() => {
         fetch('category.json')
-        .then(res => res.json())
-        .then(data => setDatas(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setDatas(data))
+    }, [])
 
     return (
         <div className='px-24'>
@@ -20,7 +20,7 @@ const Home = () => {
                     <h1 className='text-5xl'>One Step <br /> Closer To Your <br /> <span className='text-blue-400'>Dream Job</span></h1>
                     <p className='text-gray-500 pt-3 pb-3'>Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it. Manage all  <br />
                         your job application from start to finish.</p>
-                    <button className='btn btn-primary'>Get Started</button>
+                    <button className='btn bg-gradient-to-r from-blue-500 to-purple-500 '>Get Started</button>
                 </div>
 
                 <div>
@@ -43,12 +43,16 @@ const Home = () => {
                 <h1 className='text-3xl text-center pt-5 font-bold'>Featured Jobs</h1>
                 <p className='text-gray-500 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                <div>
+                <div className='grid md:grid-cols-2 pt-5 gap-10'>
                     {
                         features.map(feature => <Feature key={feature.id} feature={feature}></Feature>)
                     }
                 </div>
-            </section>      
+            </section>
+
+            <div className='text-center'>
+                <button className='btn bg-gradient-to-r from-blue-500 to-purple-500 btn-sm mt-20'>See All Jobs</button>
+            </div>
 
 
         </div>

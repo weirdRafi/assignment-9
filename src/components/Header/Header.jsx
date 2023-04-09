@@ -1,3 +1,6 @@
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -17,7 +20,7 @@ const Header = () => {
                             <li><Link to="/blog">Blog</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"><strong>NexesJOB</strong></a>
+                    <a className="btn btn-ghost normal-case text-xl"><strong><FontAwesomeIcon icon={faBolt} className="text-center" />   NexesJOB</strong></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -11,6 +11,8 @@ import Statistics from './components/Statistics/Statistics';
 import Applied from './components/Applied/Applied';
 import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SingleFeature from './components/SingleFeature/SingleFeature';
 
 
 
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
        loader: ()=> fetch('features.json')
       },
       {
+        path: '/',
+        element: <SingleFeature></SingleFeature>,
+      },
+      {
        path:'statistics',
        element: <Statistics></Statistics>
       },
@@ -37,6 +43,7 @@ const router = createBrowserRouter([
        path:'blog',
        element: <Blog></Blog>
       },
+      
 
     ]
   },
