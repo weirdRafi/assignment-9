@@ -18,7 +18,7 @@ const Feature = ({feature}) => {
                 <button className='btn btn-outline btn-primary btn-sm'>Full Time</button>
             </div>
             <p className='pb-3'><FontAwesomeIcon icon={faLocationDot} className="text-center" />
-            {location} <FontAwesomeIcon icon={faDollarSign} className="text-center" />  Salary: {salary}
+             {location}  <FontAwesomeIcon icon={faDollarSign} className="text-center" />  Salary: {salary}
             </p>
             <Link to={`/${id}`} className='btn bg-gradient-to-r from-blue-500 to-purple-500 btn-sm'>View Details</Link>
 
