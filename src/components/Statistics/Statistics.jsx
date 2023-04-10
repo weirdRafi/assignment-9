@@ -1,5 +1,6 @@
 import React from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 
@@ -11,7 +12,7 @@ const Statistics = () => {
         },
         {
             id: "A2",
-           Marks: 58
+            Marks: 58
         },
         {
             id: "A3",
@@ -23,7 +24,7 @@ const Statistics = () => {
         },
         {
             id: "A5",
-           Marks: 45
+            Marks: 45
         },
         {
             id: "A6",
@@ -38,18 +39,28 @@ const Statistics = () => {
             Marks: 50
         },
     ]
-    
+
     return (
-        <div className=''>
+        <div className=' '>
             <h1 className='text-2xl font-bold text-center'>My Assignment Marks</h1>
-            <BarChart className='mx-auto mt-10' width={500} height={300} data={marks}>
-                <Bar dataKey="Marks"></Bar>
-                <XAxis dataKey="id"></XAxis>
-                <YAxis></YAxis>
-                <Tooltip></Tooltip>
-                <Legend></Legend>
-                <ResponsiveContainer></ResponsiveContainer>
-            </BarChart>
+ 
+                <AreaChart className='mx-auto mt-10'
+                    width={500}
+                    height={400}
+                    data={marks}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="id" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="Marks" stroke="#8884d8" fill="#8884d8" />
+                </AreaChart>
         </div>
     );
 };

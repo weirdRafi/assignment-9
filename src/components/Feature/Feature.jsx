@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollarSign, faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Link, useParams } from 'react-router-dom';
+import { addToDb } from '../../utils/fakedb';
 
 const Feature = ({feature}) => {
     const {id, img, title, subtitle, location, salary } = feature;
+
+   
     
     
 
