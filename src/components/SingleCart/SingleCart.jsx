@@ -8,7 +8,7 @@ const SingleCart = ({ scart }) => {
     console.log(scart);
     return (
         <div>
-            <div className=' border rounded-lg shadow-xl flex justify-around items-center'>
+            <div className='border rounded-lg shadow-xl flex justify-around items-center'>
                 <div className='flex items-center m-5 p-5 gap-5 justify-start'>
                     <div>
                         <img className='w-36' src={img} alt="" />

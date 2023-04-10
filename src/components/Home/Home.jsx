@@ -24,7 +24,8 @@ const Home = () => {
                 </div>
 
                 <div>
-                    <img src="../../../public/All Images/P3OLGJ1 copy 1.png" alt="" />
+
+                    <img src="https://i.ibb.co/zSRXQ6b/person.png" alt="person" border="0" />
                 </div>
             </header> {/* <!-- Header End --> */}
 
