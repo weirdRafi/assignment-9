@@ -9,7 +9,7 @@ const Feature = ({feature}) => {
     
 
     return (
-        <div>
+        <div className='shadow-xl border p-2 rounded-xl'>
             <img src={img} alt="" />
             <h1 className='text-xl font-bold'>{title}</h1>
             <p className='text-gray-400'>{subtitle}</p>

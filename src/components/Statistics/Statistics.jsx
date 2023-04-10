@@ -1,5 +1,6 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 
 
 const Statistics = () => {
@@ -41,15 +42,14 @@ const Statistics = () => {
     return (
         <div className=''>
             <h1 className='text-2xl font-bold text-center'>My Assignment Marks</h1>
-            <LineChart className='mx-auto mt-10' width={500} height={300} data={marks}>
-                <Line dataKey="Marks"></Line>
+            <BarChart className='mx-auto mt-10' width={500} height={300} data={marks}>
+                <Bar dataKey="Marks"></Bar>
                 <XAxis dataKey="id"></XAxis>
                 <YAxis></YAxis>
                 <Tooltip></Tooltip>
                 <Legend></Legend>
                 <ResponsiveContainer></ResponsiveContainer>
-                <CartesianGrid></CartesianGrid>
-            </LineChart>
+            </BarChart>
         </div>
     );
 };

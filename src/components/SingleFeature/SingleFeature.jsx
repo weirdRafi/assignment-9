@@ -28,7 +28,7 @@ const SingleFeature = () => {
                     {jobsId?.experience}
 
                 </div>
-                <div className='mt-16'>
+                <div className='bg-purple-300 p-5 rounded-lg'>
                     <div>
                         <h1 className='text-3xl mb-3'>Job Details</h1>
                         <p> <FontAwesomeIcon icon={faDollarSign} className="text-center" /> Salary: {jobsId?.salary} (per month)</p>
@@ -39,6 +39,7 @@ const SingleFeature = () => {
                         <p><FontAwesomeIcon icon={faPhone} className="text-center" /> Phone: {jobsId?.phone}</p>
                         <p><FontAwesomeIcon icon={faEnvelope} className="text-center" /> Email: {jobsId?.email}</p>
                         <p><FontAwesomeIcon icon={faLocationDot} className="text-center" /> Address: {jobsId?.address}</p>
+
                         <button className='btn bg-gradient-to-r from-blue-500 to-purple-500 btn-sm mt-5'>Apply Now</button>
                     </div>
                 </div>
