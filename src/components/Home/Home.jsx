@@ -17,7 +17,7 @@ const Home = () => {
         <div className='px-24'>
             <header className='md:flex items-center'>
                 <div>
-                    <h1 className='text-5xl'>One Step <br /> Closer To Your <br /> <span className='text-blue-400'>Dream Job</span></h1>
+                    <h1 className='md:text-5xl'>One Step <br /> Closer To Your <br /> <span className='text-blue-400'>Dream Job</span></h1>
                     <p className='text-gray-500 pt-3 pb-3'>Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it. Manage all  <br />
                         your job application from start to finish.</p>
                     <button className='btn bg-gradient-to-r from-blue-500 to-purple-500 '>Get Started</button>
